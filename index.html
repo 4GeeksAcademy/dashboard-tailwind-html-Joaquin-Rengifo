@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Dashboard de demostración para analizar comisiones, ventas y rendimiento de una influencer.">
+
+    <title>Auralcance | Analytics para Creadores</title>
+
+    <!-- Tailwind CSS v4 -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="min-h-screen bg-slate-100 text-slate-900 antialiased">
+
+    <div class="min-h-screen lg:flex">
+
+        <!-- NAVEGACIÓN -->
+        <header class="bg-slate-950 text-white
+                       lg:w-64 lg:shrink-0">
+
+            <nav class="p-6" aria-label="Navegación principal">
+
+                <a href="#resumen" class="text-2xl font-bold tracking-tight">
+                    Aural<span class="text-indigo-400">cance.</span>
+                </a>
+
+
+                <ul class="flex flex-wrap gap-4 mt-6
+                           lg:flex-col lg:gap-6">
+
+                    <li>
+                        <a href="#resumen" class="hover:text-indigo-300">
+                            Resumen
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#kpis" class="hover:text-indigo-300">
+                            KPIs
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#drivers" class="hover:text-indigo-300">
+                            Rendimiento
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#operaciones" class="hover:text-indigo-300">
+                            Operaciones
+                        </a>
+                    </li>
+
+                </ul>
+            </nav>
+        </header>
+
+        <!-- CONTENIDO PRINCIPAL -->
+        <main id="resumen" class="min-w-0 flex-1 p-4
+                   sm:p-6 lg:p-10">
+
+            <div class="mb-10">
+                <p class="text-indigo-600 font-semibold
+                          text-sm tracking-widest">
+                    PANEL DE CONTROL
+                </p>
+
+                <h1 class="text-3xl sm:text-4xl
+                           font-bold mt-3">
+                    Resumen de resultados
+                </h1>
+
+                <p class="text-slate-600 mt-3">
+                    Analiza tus ventas, comisiones
+                    y rendimiento digital.
+                </p>
+            </div>
+
+            <!-- BLOQUE 1 -->
+            <section id="kpis" class="mb-12">
+                <h2 class="text-2xl font-bold mb-4">
+                    Indicadores principales
+                </h2>
+
+
+                <!-- CUADRÍCULA DE INDICADORES KPI -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                    <!-- KPI 1: COMISIONES -->
+                    <article
+                        class="min-w-0 bg-white rounded-2xl
+                    border border-slate-200 p-6 shadow-sm hover:border-indigo-300 hover:shadow-md transition-all duration-300">
+
+                        <div class="flex items-center justify-between gap-3">
+                            <h3 class="text-sm font-medium text-slate-500">
+                                Comisiones totales
+                            </h3>
+
+                            <span class="bg-indigo-50 text-indigo-600
+                       rounded-lg px-3 py-2 font-bold" aria-hidden="true">
+                                €
+                            </span>
+                        </div>
+
+                        <p class="mt-5 text-3xl font-bold
+                  text-slate-900 tabular-nums">
+                            1.170 €
+                        </p>
+
+                        <p class="mt-3 text-sm text-slate-500">
+                            Comisión del 15 % sobre las ventas
+                        </p>
+                    </article>
+
+                    <!-- KPI 2: VENTAS -->
+                    <article
+                        class="min-w-0 bg-white rounded-2xl
+                    border border-slate-200 p-6 shadow-sm hover:border-indigo-300 hover:shadow-md transition-all duration-300">
+
+                        <div class="flex items-center justify-between gap-3">
+                            <h3 class="text-sm font-medium text-slate-500">
+                                Ventas generadas
+                            </h3>
+
+                            <span class="bg-emerald-50 text-emerald-600
+                       rounded-lg px-3 py-2 font-bold" aria-hidden="true">
+                                +
+                            </span>
+                        </div>
+
+                        <p class="mt-5 text-3xl font-bold
+                  text-slate-900 tabular-nums">
+                            100
+                        </p>
+
+                        <p class="mt-3 text-sm text-slate-500">
+                            Productos A, B y C
+                        </p>
+                    </article>
+
+                    <!-- KPI 3: CONVERSIÓN -->
+                    <article
+                        class="min-w-0 bg-white rounded-2xl
+                    border border-slate-200 p-6 shadow-sm hover:border-indigo-300 hover:shadow-md transition-all duration-300">
+
+                        <div class="flex items-center justify-between gap-3">
+                            <h3 class="text-sm font-medium text-slate-500">
+                                Tasa de conversión
+                            </h3>
+
+                            <span class="bg-amber-50 text-amber-600
+                       rounded-lg px-3 py-2 font-bold" aria-hidden="true">
+                                %
+                            </span>
+                        </div>
+
+                        <p class="mt-5 text-3xl font-bold
+                  text-slate-900 tabular-nums">
+                            0,20 %
+                        </p>
+
+                        <p class="mt-3 text-sm text-slate-500">
+                            100 ventas / 50.000 de alcance
+                        </p>
+                    </article>
+
+                </div>
+
+            </section>
+
+            <!-- BLOQUE 2 -->
+            <section id="drivers" class="mb-12">
+                <h2 class="text-2xl font-bold mb-4">
+                    Factores de rendimiento
+                </h2>
+
+
+                <!-- CUADRÍCULA DE DRIVERS -->
+                <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+
+                    <!-- DRIVER 1: PLATAFORMAS -->
+                    <article class="min-w-0 bg-white rounded-2xl
+                    border border-slate-200 p-6 shadow-sm">
+
+                        <h3 class="text-lg font-semibold text-slate-900">
+                            Rendimiento por plataforma
+                        </h3>
+
+                        <p class="text-sm text-slate-500 mt-2 mb-6">
+                            Distribución de las comisiones generadas
+                        </p>
+
+                        <ul class="space-y-6">
+
+                            <li>
+                                <div class="flex justify-between gap-3 mb-2">
+                                    <span class="text-sm text-slate-600">
+                                        Instagram
+                                    </span>
+                                    <strong class="text-sm">450 €</strong>
+                                </div>
+
+                                <div class="h-3 bg-slate-100 rounded-full overflow-hidden">
+                                    <div class="h-full w-[38.46%]
+                                bg-indigo-500 rounded-full" aria-hidden="true"></div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="flex justify-between gap-3 mb-2">
+                                    <span class="text-sm text-slate-600">
+                                        TikTok
+                                    </span>
+                                    <strong class="text-sm">420 €</strong>
+                                </div>
+
+                                <div class="h-3 bg-slate-100 rounded-full overflow-hidden">
+                                    <div class="h-full w-[35.90%]
+                                bg-violet-500 rounded-full" aria-hidden="true"></div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="flex justify-between gap-3 mb-2">
+                                    <span class="text-sm text-slate-600">
+                                        YouTube
+                                    </span>
+                                    <strong class="text-sm">300 €</strong>
+                                </div>
+
+                                <div class="h-3 bg-slate-100 rounded-full overflow-hidden">
+                                    <div class="h-full w-[25.64%]
+                                bg-sky-500 rounded-full" aria-hidden="true"></div>
+                                </div>
+                            </li>
+
+                        </ul>
+
+                        <p class="mt-6 text-xs text-slate-500">
+                            Cada barra representa una parte de los 1.170 €
+                            en comisiones.
+                        </p>
+                    </article>
+
+                    <!-- DRIVER 2: PRODUCTOS -->
+                    <article class="min-w-0 bg-white rounded-2xl
+                    border border-slate-200 p-6 shadow-sm">
+
+                        <h3 class="text-lg font-semibold text-slate-900">
+                            Rendimiento por producto
+                        </h3>
+
+                        <p class="text-sm text-slate-500 mt-2 mb-6">
+                            Comisiones generadas por cada producto
+                        </p>
+
+                        <ul class="space-y-6">
+
+                            <li>
+                                <div class="flex justify-between gap-3 mb-2">
+                                    <span class="text-sm text-slate-600">
+                                        Producto A
+                                    </span>
+                                    <strong class="text-sm">300 €</strong>
+                                </div>
+
+                                <div class="h-3 bg-slate-100 rounded-full overflow-hidden">
+                                    <div class="h-full w-[25.64%]
+                                bg-emerald-500 rounded-full" aria-hidden="true"></div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="flex justify-between gap-3 mb-2">
+                                    <span class="text-sm text-slate-600">
+                                        Producto B
+                                    </span>
+                                    <strong class="text-sm">450 €</strong>
+                                </div>
+
+                                <div class="h-3 bg-slate-100 rounded-full overflow-hidden">
+                                    <div class="h-full w-[38.46%]
+                                bg-indigo-500 rounded-full" aria-hidden="true"></div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="flex justify-between gap-3 mb-2">
+                                    <span class="text-sm text-slate-600">
+                                        Producto C
+                                    </span>
+                                    <strong class="text-sm">420 €</strong>
+                                </div>
+
+                                <div class="h-3 bg-slate-100 rounded-full overflow-hidden">
+                                    <div class="h-full w-[35.90%]
+                                bg-amber-500 rounded-full" aria-hidden="true"></div>
+                                </div>
+                            </li>
+
+                        </ul>
+
+                        <p class="mt-6 text-xs text-slate-500">
+                            El Producto B genera la comisión total más alta.
+                        </p>
+                    </article>
+
+                    <!-- DRIVER 3: EMBUDO -->
+                    <article class="min-w-0 bg-white rounded-2xl
+                    border border-slate-200 p-6 shadow-sm">
+
+                        <h3 class="text-lg font-semibold text-slate-900">
+                            Embudo de conversión
+                        </h3>
+
+                        <p class="text-sm text-slate-500 mt-2 mb-6">
+                            Del alcance a las ventas generadas
+                        </p>
+
+                        <ol class="space-y-3 text-center">
+
+                            <li class="bg-indigo-50 rounded-xl p-4">
+                                <p class="text-2xl font-bold text-indigo-700">
+                                    50.000
+                                </p>
+                                <p class="text-sm text-indigo-600">
+                                    Alcance agregado
+                                </p>
+                            </li>
+
+                            <li aria-hidden="true" class="text-slate-400">
+                                ↓
+                            </li>
+
+                            <li class="bg-indigo-100 rounded-xl p-4">
+                                <p class="text-2xl font-bold text-indigo-700">
+                                    2.500
+                                </p>
+                                <p class="text-sm text-indigo-600">
+                                    Clics
+                                </p>
+                            </li>
+
+                            <li aria-hidden="true" class="text-slate-400">
+                                ↓
+                            </li>
+
+                            <li class="bg-indigo-200 rounded-xl p-4">
+                                <p class="text-2xl font-bold text-indigo-800">
+                                    100
+                                </p>
+                                <p class="text-sm text-indigo-700">
+                                    Ventas
+                                </p>
+                            </li>
+
+                        </ol>
+
+                        <p class="mt-5 text-sm text-slate-600 text-center">
+                            Conversión sobre alcance:
+                            <strong class="text-indigo-700">0,20 %</strong>
+                        </p>
+                    </article>
+
+                </div>
+
+            </section>
+
+            <!-- BLOQUE 3 -->
+
+            <section id="operaciones" aria-labelledby="operations-title" class="mb-12">
+                <!-- ENCABEZADO -->
+                <div class="mb-6">
+
+                    <h2 id="operations-title" class="text-2xl font-bold text-slate-900">
+                        Detalle operacional
+                    </h2>
+
+                    <p class="mt-2 text-slate-500">
+                        Desglose de ventas y comisiones
+                        por producto promocionado.
+                    </p>
+
+                </div>
+
+                <!-- TABLA PARA TABLET Y ESCRITORIO -->
+                <div class="hidden md:block bg-white rounded-2xl
+                border border-slate-200 shadow-sm
+                overflow-hidden">
+
+                    <table class="w-full text-sm text-left">
+
+                        <caption class="sr-only">
+                            Ventas, precios e ingresos por producto
+                        </caption>
+
+                        <!-- ENCABEZADOS -->
+                        <thead class="bg-slate-50 text-slate-600">
+                            <tr>
+                                <th scope="col" class="px-4 py-4">
+                                    Producto
+                                </th>
+
+                                <th scope="col" class="px-4 py-4 text-right">
+                                    Precio
+                                </th>
+
+                                <th scope="col" class="px-4 py-4 text-right">
+                                    Ventas
+                                </th>
+
+                                <th scope="col" class="px-4 py-4 text-right">
+                                    Importe vendido
+                                </th>
+
+                                <th scope="col" class="px-4 py-4 text-right">
+                                    Comisiones
+                                </th>
+                            </tr>
+                        </thead>
+
+                        <!-- REGISTROS -->
+                        <tbody class="divide-y divide-slate-100">
+
+                            <tr class="hover:bg-slate-50">
+                                <th scope="row" class="px-4 py-5 font-semibold">
+                                    Producto A
+                                </th>
+                                <td class="px-4 py-5 text-right">50 €</td>
+                                <td class="px-4 py-5 text-right">40</td>
+                                <td class="px-4 py-5 text-right">2.000 €</td>
+                                <td class="px-4 py-5 text-right
+                               font-semibold text-indigo-600">
+                                    300 €
+                                </td>
+                            </tr>
+
+                            <tr class="hover:bg-slate-50">
+                                <th scope="row" class="px-4 py-5 font-semibold">
+                                    Producto B
+                                </th>
+                                <td class="px-4 py-5 text-right">120 €</td>
+                                <td class="px-4 py-5 text-right">25</td>
+                                <td class="px-4 py-5 text-right">3.000 €</td>
+                                <td class="px-4 py-5 text-right
+                               font-semibold text-indigo-600">
+                                    450 €
+                                </td>
+                            </tr>
+
+                            <tr class="hover:bg-slate-50">
+                                <th scope="row" class="px-4 py-5 font-semibold">
+                                    Producto C
+                                </th>
+                                <td class="px-4 py-5 text-right">80 €</td>
+                                <td class="px-4 py-5 text-right">35</td>
+                                <td class="px-4 py-5 text-right">2.800 €</td>
+                                <td class="px-4 py-5 text-right
+                               font-semibold text-indigo-600">
+                                    420 €
+                                </td>
+                            </tr>
+
+                        </tbody>
+
+                        <!-- TOTALES -->
+                        <tfoot class="bg-indigo-50 font-bold">
+                            <tr>
+                                <th scope="row" colspan="2" class="px-4 py-5 text-left">
+                                    TOTAL
+                                </th>
+
+                                <td class="px-4 py-5 text-right">100</td>
+                                <td class="px-4 py-5 text-right">7.800 €</td>
+                                <td class="px-4 py-5 text-right text-indigo-700">
+                                    1.170 €
+                                </td>
+                            </tr>
+                        </tfoot>
+
+                    </table>
+                </div>
+
+                <!-- TARJETAS PARA MÓVIL -->
+                <div class="grid grid-cols-1 gap-4 md:hidden">
+                    <article class="bg-white rounded-2xl border border-slate-200 shadow-sm p-5">
+                        <h3 class="font-semibold text-slate-900">Producto A</h3>
+                        <dl class="mt-4 grid grid-cols-2 gap-x-4 gap-y-3 text-sm">
+                            <dt class="text-slate-500">Precio</dt>
+                            <dd class="text-right text-slate-900">50 €</dd>
+                            <dt class="text-slate-500">Ventas</dt>
+                            <dd class="text-right text-slate-900">40</dd>
+                            <dt class="text-slate-500">Importe vendido</dt>
+                            <dd class="text-right text-slate-900">2.000 €</dd>
+                            <dt class="text-slate-500">Comisiones</dt>
+                            <dd class="text-right font-semibold text-indigo-600">300 €</dd>
+                        </dl>
+                    </article>
+
+                    <article class="bg-white rounded-2xl border border-slate-200 shadow-sm p-5">
+                        <h3 class="font-semibold text-slate-900">Producto B</h3>
+                        <dl class="mt-4 grid grid-cols-2 gap-x-4 gap-y-3 text-sm">
+                            <dt class="text-slate-500">Precio</dt>
+                            <dd class="text-right text-slate-900">120 €</dd>
+                            <dt class="text-slate-500">Ventas</dt>
+                            <dd class="text-right text-slate-900">25</dd>
+                            <dt class="text-slate-500">Importe vendido</dt>
+                            <dd class="text-right text-slate-900">3.000 €</dd>
+                            <dt class="text-slate-500">Comisiones</dt>
+                            <dd class="text-right font-semibold text-indigo-600">450 €</dd>
+                        </dl>
+                    </article>
+
+                    <article class="bg-white rounded-2xl border border-slate-200 shadow-sm p-5">
+                        <h3 class="font-semibold text-slate-900">Producto C</h3>
+                        <dl class="mt-4 grid grid-cols-2 gap-x-4 gap-y-3 text-sm">
+                            <dt class="text-slate-500">Precio</dt>
+                            <dd class="text-right text-slate-900">80 €</dd>
+                            <dt class="text-slate-500">Ventas</dt>
+                            <dd class="text-right text-slate-900">35</dd>
+                            <dt class="text-slate-500">Importe vendido</dt>
+                            <dd class="text-right text-slate-900">2.800 €</dd>
+                            <dt class="text-slate-500">Comisiones</dt>
+                            <dd class="text-right font-semibold text-indigo-600">420 €</dd>
+                        </dl>
+                    </article>
+                </div>
+
+
+                <!-- ALERTAS Y OPORTUNIDADES -->
+                <section class="mt-10" aria-labelledby="alerts-title">
+
+                    <div class="mb-6">
+                        <h3 id="alerts-title" class="text-xl font-bold text-slate-900">
+                            Alertas y oportunidades
+                        </h3>
+
+                        <p class="text-slate-500 text-sm mt-2">
+                            Hallazgos destacados del rendimiento.
+                        </p>
+                    </div>
+
+                    <div class="grid grid-cols-1
+                md:grid-cols-2 xl:grid-cols-3 gap-5">
+
+                        <!-- ALERTA 1 -->
+                        <article class="bg-indigo-50 border border-indigo-200
+                        rounded-xl p-6">
+
+                            <span class="inline-block text-xs font-semibold
+                         text-indigo-700 mb-4">
+                                PRODUCTO DESTACADO
+                            </span>
+
+                            <h4 class="text-2xl font-bold text-indigo-900">
+                                450 €
+                            </h4>
+
+                            <p class="text-indigo-800 font-medium mt-2">
+                                Producto B
+                            </p>
+
+                            <p class="text-sm text-indigo-700 mt-3
+                      leading-relaxed">
+                                Es el producto que genera mayores
+                                comisiones, con el 38,46 % del total.
+                            </p>
+                        </article>
+
+                        <!-- ALERTA 2 -->
+                        <article class="bg-emerald-50 border border-emerald-200
+                        rounded-xl p-6">
+
+                            <span class="inline-block text-xs font-semibold
+                         text-emerald-700 mb-4">
+                                MAYOR VOLUMEN
+                            </span>
+
+                            <h4 class="text-2xl font-bold text-emerald-900">
+                                40 ventas
+                            </h4>
+
+                            <p class="text-emerald-800 font-medium mt-2">
+                                Producto A
+                            </p>
+
+                            <p class="text-sm text-emerald-700 mt-3
+                      leading-relaxed">
+                                Es el producto más vendido en unidades,
+                                aunque no genera la mayor comisión.
+                            </p>
+                        </article>
+
+                        <!-- ALERTA 3 -->
+                        <article class="bg-amber-50 border border-amber-200
+                        rounded-xl p-6">
+
+                            <span class="inline-block text-xs font-semibold
+                         text-amber-800 mb-4">
+                                OPORTUNIDAD DE MEJORA
+                            </span>
+
+                            <h4 class="text-2xl font-bold text-amber-900">
+                                0,18 %
+                            </h4>
+
+                            <p class="text-amber-800 font-medium mt-2">
+                                TikTok
+                            </p>
+
+                            <p class="text-sm text-amber-800 mt-3
+                      leading-relaxed">
+                                Registra 33 ventas sobre 18.000
+                                de alcance, la menor tasa entre
+                                las tres plataformas.
+                            </p>
+                        </article>
+
+                    </div>
+                </section>
+
+
+            </section>
+
+
+
+
+        </main>
+
+    </div>
+
+</body>
+
+</html>

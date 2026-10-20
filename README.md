@@ -1,41 +1,103 @@
-# HTML Hello
+# Auralcance — Influencer Analytics Dashboard
 
-The most basic boilerplate for any 4Geeks Academy student, start your very first website from scratch.
+## Descripción
 
-> There is a video tutorial on [how to use this template to create your very first website here](https://youtu.be/dfbDCMu_p-0).
+**Auralcance** es un dashboard responsivo diseñado para ayudar a creadores de contenido e influencers a visualizar el rendimiento de sus campañas, ventas y comisiones a través de distintas plataformas digitales.
 
-## What to do next?
+Desarrollado como proyecto académico del programa **AI Engineering de 4Geeks Academy**, aplicando HTML5 y Tailwind CSS v4.
 
-Create an `index.html` file with the [basic HTML structure](http://4geeks.com/lesson/what-is-html-learn-html#page-structure) and see it live by running a web-server using the following command:
+## Objetivo
 
-```bash
-$ pip3 install flask && python3 server.py
-```
+Centralizar visualmente los principales indicadores de negocio para facilitar la interpretación de resultados y la identificación de oportunidades de mejora.
 
-- You can create as many HTML files as you want.
-- You can also create CSS files and import them into your website using a `<link>` tag placed between the `<head></head>` tags, like this:
+El proyecto utiliza datos ficticios de demostración y no realiza consultas a APIs externas.
 
-```html
-<head>
-  ...
-  <link rel="stylesheet" type="text/css" href="styles.css">
-  ...
-</head>
-```
+## Tecnologías utilizadas
 
-- If you want to use Tailwind CSS, add it optionally via the official Tailwind CSS v4 CDN inside the same `<head>`:
+- HTML5 semántico.
+- Tailwind CSS v4 mediante CDN.
+- Flexbox y CSS Grid.
+- Diseño responsive con enfoque mobile-first.
 
-```html
-<head>
-  ...
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  <link rel="stylesheet" type="text/css" href="styles.css">
-  ...
-</head>
-```
+No se utilizan React, Vue ni JavaScript personalizado para la lógica del dashboard.
 
-### Contributors
+## Estructura del dashboard
 
-This template was built as part of the [Full Stack Developer course](https://4geeksacademy.com/us/coding-bootcamps/part-time-full-stack-developer) at [4Geeks Academy Coding Bootcamp](https://4geeksacademy.com/us/coding-bootcamp) by [Alejandro Sanchez](https://twitter.com/alesanchezr) and [many other contributors](https://github.com/4GeeksAcademy/html-hello/graphs/contributors).
+### 1. Indicadores principales (KPI)
 
-You can find other templates and resources like this at the [school's GitHub page](https://github.com/4geeksacademy/).
+- Comisiones totales: 1.170 €.
+- Ventas generadas: 100.
+- Tasa de conversión sobre alcance agregado: 0,20 %.
+
+### 2. Factores de rendimiento (Drivers)
+
+- Comparación de comisiones entre Instagram, TikTok y YouTube.
+- Rendimiento de los tres productos promocionados.
+- Embudo de conversión: alcance, clics y ventas.
+
+### 3. Detalles operacionales
+
+- Tabla de ventas y comisiones por producto.
+- Tarjetas adaptadas a dispositivos móviles.
+- Alertas y oportunidades de mejora basadas en los datos simulados.
+
+## Modelo de negocio
+
+La influencer promociona tres productos y recibe una comisión del 15 % por venta.
+
+| Producto | Precio | Ventas | Comisiones |
+|---|---:|---:|---:|
+| Producto A | 50 € | 40 | 300 € |
+| Producto B | 120 € | 25 | 450 € |
+| Producto C | 80 € | 35 | 420 € |
+| **Total** | | **100** | **1.170 €** |
+
+## Diseño responsive
+
+La interfaz utiliza utilidades responsivas de Tailwind CSS v4:
+
+- `sm:` — desde 640 px.
+- `md:` — desde 768 px.
+- `lg:` — desde 1024 px.
+- `xl:` — desde 1280 px.
+
+En móviles se utiliza navegación superior, componentes apilados y tarjetas operacionales.
+
+En pantallas grandes se muestra una barra lateral y una tabla de productos.
+
+## Accesibilidad y semántica
+
+- Uso de etiquetas `header`, `nav`, `main`, `section` y `article`.
+- Tabla semántica con encabezados y totales.
+- Información textual que acompaña los indicadores visuales.
+- Uso de atributos ARIA donde corresponde.
+
+## Validación
+
+El documento HTML fue comprobado mediante W3C Nu HTML Checker.
+
+**Resultado:** sin errores ni advertencias.
+
+Se realizaron revisiones visuales del diseño en escritorio, tablet y móvil.
+
+## Ejecución
+
+1. Descargar o clonar el repositorio.
+2. Abrir la carpeta del proyecto.
+3. Ejecutar un servidor local:
+
+`python3 -m http.server 3000`
+
+4. Abrir `http://localhost:3000` en el navegador.
+
+Se necesita conexión a internet para cargar Tailwind CSS v4 desde el CDN.
+
+## Consideraciones
+
+Este dashboard es un prototipo académico estático. Las estadísticas son simuladas y no se actualizan automáticamente.
+
+## Autor
+
+**Joaquín Rengifo**
+
+AI Engineering — 4Geeks Academy.
